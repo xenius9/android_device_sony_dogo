@@ -27,6 +27,8 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/sony/dogo/bluetooth
 
 TARGET_KERNEL_CONFIG := cm_fusion3_dogo_defconfig
 
+WITH_DEXPREOPT := true
+
 # Partition information
 BOARD_VOLD_MAX_PARTITIONS := 26
 
