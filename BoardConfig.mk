@@ -27,7 +27,8 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/sony/dogo/bluetooth
 
 TARGET_KERNEL_CONFIG := cm_fusion3_dogo_defconfig
 
-WITH_DEXPREOPT := true
+# Healthd
+BACKLIGHT_PATH := /sys/class/leds/lm3533-lcd-bl/brightness
 
 # Partition information
 BOARD_VOLD_MAX_PARTITIONS := 26
@@ -38,3 +39,5 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 1056964608
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 2147483648
 
 BOARD_HARDWARE_CLASS += device/sony/dogo/cmhw
+
+WITH_DEXPREOPT := true
